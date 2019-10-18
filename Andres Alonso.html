@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><meta http-equiv="X-UA-Compatible" content="IE=9" /><meta charset="utf-8" />
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" language="javascript"></script>
+
+<script type="text/javascript">
+    document.onkeyup = PresTab;
+
+    function PresTab(e) {
+        var element = document.activeElement;
+        var tabIndex = element.tabIndex != "" ? element.tabIndex : null;
+        var keycode = (window.event) ? event.keyCode : e.keyCode;
+        if (keycode == 9)
+            if (tabIndex == 92) {
+            $('[tabindex=2]').focus();
+
+        }
+    }
+ 
+   </script>
+
+    <title>
+	Tribunal Supremo de Elecciones - Costa Rica - Listado de Nombres
+</title><meta content="Ing. Didier Barrios Morales / K.S.CH 12/06/2008" name="dc.creator" /></head>
+<body bgcolor="#8F9DA8" oncontextmenu="return false">
+
+<script type="text/javascript">
+    $("body").on('keypress', function (e) {
+        var element = document.activeElement;
+        var tabIndex = element.tabIndex != "" ? element.tabIndex : null;
+
+//        if (e.which == 11 && tabIndex == 91) {
+//            $('[tabindex=2]').focus();
+
+//        }
+
+//        if (e.which == 9 && tabIndex == 91) {
+//            $('[tabindex=2]').focus();
+
+//        }
+
+        if (e.which == 13 && tabIndex != 90) {
+
+            var current = tabIndex - 11
+            var items = $('#chk1 input:checkbox');
+            for (var i = 0; i < items.length; i++) {    
+
+                if (i == current) {
+                    items[i].checked = true;
+                    
+                    var sig = tabIndex + 1;
+                    $('[tabindex=' + sig + ']').focus();
+                    break;
+                }
+            }
+
+            return false
+        }
+
+    });
+
+    // $('[tabindex=90]').focus();
+
+</script>
+
+
+        <table width="100%" align="center">
+            <tr>
+                <td align="center"><img id="Image2" tabindex="1" src="imagenes/encabezado.png" alt="Tribunal Supremo de Elecciones, Costa Rica, Consultas Civiles" border="0" /></td>
+            </tr>
+        </table>
+    <form name="form1" method="post" action="./muestra_nombres.aspx" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTMyODQ5MTUyNg9kFgICAg9kFhQCCQ8PFgIeBFRleHQFDyVBbmRyZXMgQWxvbnNvJWRkAgsPDxYCHwAFBkxvcGV6JWRkAg0PDxYCHwAFCUJvbGHDsW9zJWRkAg8PDxYCHwAFAjUwZGQCEQ8PFgIfAAUBMWRkAhUPDxYCHwAFHFDDoWdpbmEgIyAxIGRlIHVuIHRvdGFsIGRlIDFkZAIXDw8WAh4HVmlzaWJsZWhkZAIZDw8WAh8BaGRkAh8PEA8WBB4NRGF0YVRleHRGaWVsZAUGTm9tYnJlHgtfIURhdGFCb3VuZGdkEBUBKzEtIDMwNDA5MDExNiAgIEFORFJFUyBBTE9OU08gTE9QRVogQk9MQcORT1MVAQkzMDQwOTAxMTYUKwMBZ2RkAiUPDxYCHwAFAU5kZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WBwULSW1hZ2VJbmljaW8FE0ltYWdlQ29uc3VsdGFDZWR1bGEFE0ltYWdlQ29uc3VsdGFOb21icmUFCkltYWdlU2FsaXIFBGNoazIFBmNoazEkMAUGY2hrMSQwi62dlW/0JmBFRD/aHF98Oxh18FcgirIFBJmm5bcT0OU=" />
+
+<script type="text/javascript" src="BusyBoxDotNet.axd?res=BBDN.js$YAHOO.js$dom.js$event.js$animation.js$BrowserSniff.js$Common.js$BusyBox.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+var BusyBox1Image=new Image();BusyBox1Image.src="BusyBoxDotNet.axd?res=GearsSmall.gif";var BusyBox1OperaBackgroungImage=new Image();BusyBox1OperaBackgroungImage.src="BusyBoxDotNet.axd?res=maskBG.png";var BusyBox1=new BBDN.core.BusyBox("BusyBox1","Por favor espere...","Consulta realizándose","","","BusyBoxDotNet.axd?res=GearsSmall.gif","classic",true,false,false,"",50,100,"1px","","Solid","","normal","normal","8pt","Arial","bold","normal","11pt","Arial","","",0,"easeout",false,20,"center",true,500,"easeout",false,false,"","auto");function Show_BusyBox1(){BusyBox1.Show();}function Hide_BusyBox1(){BusyBox1.Close();}YAHOO.util.Event.addListener(window,"beforeunload",Show_BusyBox1);//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="7B3CAE94" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAhSvADjHGQpIsW9WIR7E+k6iqbymbVNf9U++jDqKpBZeKfpigIS2tjkEVbbLpJMXRKuK+c1zGEqN0QiOtSVIjbTo8XTvMemOeiTsiCv52YIenkaKIaYbvYLqY11wsN1djFKTSWSTogZj2LMMlavARzyzfg78Z8BXhXifTCAVkevdxsvMdpfg5b5TOQa7cdtjZ9rlDIeJbq3uh2UumeGbr/O" />
+
+        <table width="100%" align="center">
+            <tr>
+                <td align="center" width="10%"></td>
+                <td align="center" width="80%">
+                    <table height="40" border="0" align="center" style="width: 619px">
+                      <tr>
+                        <td align="center"> 
+                        <input type="image" name="ImageInicio" id="ImageInicio" tabindex="2" src="imagenes/inicio.png" alt="Menú inicio" border="0" />
+                        </td>
+                        
+                        <td align="center">
+                        <input type="image" name="ImageConsultaCedula" id="ImageConsultaCedula" tabindex="3" src="imagenes/consultacedula.png" alt="Menú consultar cédula" border="0" />
+                        </td>
+                        
+                        <td align="center">
+                        <input type="image" name="ImageConsultaNombre" id="ImageConsultaNombre" tabindex="4" src="imagenes/consultanombre.png" alt="Menú consultar nombre" border="0" /></td>
+                        
+                        <td align="center">
+                        <input type="image" name="ImageSalir" id="ImageSalir" tabindex="5" src="imagenes/salir.png" alt="Menú salir" border="0" />
+                        </td>
+                      </tr>
+                    </table>
+                </td>
+                <td align="center" width="10%"></td>
+            </tr>
+        </table>
+
+
+
+        <table style="width: 1048px" align="center">
+            <tr>
+                <td>
+                </td>
+                <td align="center" style="width: 885px">
+                   </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 26px">
+                </td>
+                <td style="width: 885px; height: 26px" align="center">
+                    
+                    
+                    
+                    
+                    <br />
+               
+                    
+               
+
+                    
+                </td>
+                <td style="height: 26px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td align="center" style="width: 885px">
+                    <span id="lblmensajes" tabindex="6" style="display:inline-block;"><b><font face="Tahoma" color="White" size="4">Página # 1 de un total de 1</font></b></span></td>
+                <td>
+                </td>
+            </tr>
+        </table>
+ 
+        <table style="width: 1048px" align="center">
+            <tr>
+                <td style="width: 173px; height: 19px">
+                </td>
+                <td align="center" style="font: caption; width: 573px; color: #ffffff; height: 19px;
+                    background-color: transparent">
+                    
+                    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+                    </td>
+                <td style="height: 19px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 173px; height: 42px">
+                </td>
+                <td align="center" style="font: caption; width: 573px; color: #ffffff; height: 42px;
+                    background-color: background">                   
+                    
+                <span id="Label2" tabindex="9">Seleccione la(s) Persona(s) a Consultar</span>
+
+                    </td>
+                <td style="height: 42px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 173px">
+                </td>
+                <td align="left" bgcolor="#BECAD0" style="width: 573px">
+                    &nbsp;<span><font face="Helvetica" size="3"><input id="chk2" type="checkbox" name="chk2" tabindex="10" /><label for="chk2">Todos</label></font></span>&nbsp;<br />
+                    <span id="chk1" style="display:inline-block;"><font face="Helvetica" color="#0000C0" size="3"><span tabindex="11"><input id="chk1_0" type="checkbox" name="chk1$0" /><label for="chk1_0">1- 304090116   ANDRES ALONSO LOPEZ BOLAÑOS</label></span></font></span></td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 173px; height: 55px">
+                </td>
+                <td align="center" 
+                    style="width: 573px; height: 55px; font-weight: bold; font-size: smaller; color: white; font-family: 'Helvetica';">
+                    &nbsp;
+                    <input type="submit" name="Button1" value="Realizar consulta" id="Button1" tabindex="90" style="font-family: Helvetica; font-size:medium" />&nbsp;
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <span id="Label3" tabindex="91">TRIBUNAL SUPREMO DE ELECCIONES DERECHOS RESERVADOS</span><br />
+                    </td>           
+                <td style="height: 55px">
+                    
+                    <span id="Label4" tabindex="92" style="display:inline-block;"></span></td>
+            </tr>
+        </table>
+    </form>             
+</body>
+</html>
